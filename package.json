@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "node": "^23.4.0",
+    "scrollreveal": "^4.0.9"
+  }
+}
