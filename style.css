@@ -1,0 +1,144 @@
+/* Définir les polices */
+@font-face {
+    font-family: 'kiona';
+    src: url('/src/police/Kiona-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    font-family: 'kiona', sans-serif;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+/* Wrapper pour centrer tout le contenu */
+.wrapper {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'area-extended', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #bbb;
+}
+
+/* Contenu principal */
+.main-content {
+    padding: 20px;
+}
+
+.accroche {
+    font-family: 'area-extended', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.moon {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-right: -175px;
+}
+
+.interactive {
+    margin: 40px 0;
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+.intro .accroche {
+    flex: 1 1 300px;
+}
+
+.intro .moon {
+    flex: 1 1 300px;
+}
+
+
+/* Section Discourd */
+.discourd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Texte de la section */
+.discourd p {
+    flex: 1 1 50%; /* Prend 50% de la largeur du conteneur */
+    font-size: 16px;
+    line-height: 1.6;
+    color: white;
+    text-align: left;
+}
+
+/* Visualiseur Spline */
+.discourd .kennedy {
+    flex: 1 1 50%; /* Prend 50% de la largeur du conteneur */
+    height: 500px; /* Ajuste la hauteur */
+    max-width: 100%; /* Empêche le dépassement horizontal */
+    border-radius: 10px; /* Ajout d'une bordure arrondie optionnelle */
+}
