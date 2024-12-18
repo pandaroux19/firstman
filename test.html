@@ -54,29 +54,31 @@
 
             <!-- History Section -->
             <section data-aos="fade-up">
-                <p>
+                <p class="textcenter">
                     À la suite de la Seconde Guerre mondiale, le monde entra dans une nouvelle période marquée par des
                     tensions croissantes entre deux superpuissances : les États-Unis et l'Union soviétique...
                 </p>
             </section>
 
             <!-- Kennedy Speech -->
-            <section>
-                <section data-aos="fade-up">
-                    <p class="headline">
+            <section class="kennedy">
+                <section data-aos="fade-up" class="taille2">
+                    <p class="txtleft">
                         Face aux avancées soviétiques, le président américain John F. Kennedy s’adressa à la nation et
                         au monde. En mai 1961, il lança un défi ambitieux : faire en sorte qu’un Américain marche sur la
                         Lune et revienne sain et sauf avant la fin de la décennie...
                     </p>
                 </section>
+                <div class="taille">
                 <spline-viewer url="https://prod.spline.design/UEXL0Yaim929O9kr/scene.splinecode"
-                    class="kennedy"></spline-viewer>
+                    class="imgkennedy"></spline-viewer>
+                </div>
             </section>
 
             <!-- Apollo Missions -->
             <section data-aos="fade-right">
 
-                <p class="headline">
+                <p class="textcenter">
                     La NASA, l’agence spatiale des États-Unis, entreprit la mise en œuvre d’un projet qui changera le
                     tournant de la conquête spatiale : le programme Apollo.
                     Au fil des années, ingénieurs, scientifiques et astronautes unirent leurs efforts, repoussant les
@@ -86,7 +88,7 @@
                 </p>
 
                 <spline-viewer url="https://prod.spline.design/loIGNNmVKkIPfFwl/scene.splinecode"></spline-viewer>
-                <p class="headline">
+                <p class="textcenter">
                     Le 16 juillet 1969 marqua la fin du compte à rebours. Apollo 11, la mission chargée de concrétiser
                     le défi lancé par Kennedy, était sur le point de décoller. À bord se trouvaient trois astronautes :
                     Neil Armstrong, Buzz Aldrin et Michael Collins, porteurs de l’espoir et de l’ambition d’une nation
@@ -96,7 +98,7 @@
 
             <!-- Launch Section -->
             <section data-aos="zoom-in">
-                <p class="headline">
+                <p class="textcenter">
                     Sous les yeux du monde entier, les trois astronautes enfilèrent leurs combinaisons et se préparèrent
                     à embarquer dans la fusée Saturn V. L’atmosphère était chargée de tension. Alors qu’ils prenaient
                     place dans la capsule, le monde entier retenait son souffle, conscient de l’immensité de l’inconnu
@@ -108,7 +110,7 @@
 
             <section data-aos="fade-up">
                 <spline-viewer url="https://prod.spline.design/koiI8VIYRZZsTl6E/scene.splinecode"></spline-viewer>
-                <p>
+                <p class="textcenter">
                     Le lancement d’Apollo 11 était diffusé en direct à travers le monde, captivant des millions de
                     spectateurs de toutes origines. Partout, les gens se réunissaient pour assister à ce moment
                     historique. Dans un puissant nuage de flammes et de fumée, la fusée s’élança vers le ciel, portant
@@ -128,7 +130,7 @@
                 <section data-aos="fade-up">
 
                     <spline-viewer url="https://prod.spline.design/NuaRispUGow-HSzJ/scene.splinecode"></spline-viewer>
-                    <p class="headline">
+                    <p class="textcenter">
                         Après 21 heures et 30 minutes de voyage, Apollo 11 approche de sa destination. Les astronautes
                         se préparèrent pour l'étape cruciale : l'atterrissage sur la Lune. L'adrénaline montait alors
                         que l'atterrisseur, baptisé Eagle, se séparait du module de commande. </p>
@@ -137,7 +139,7 @@
                 <section data-aos="fade-up">
                     <spline-viewer url="https://prod.spline.design/zRKj5AinLTCj0Ras/scene.splinecode"></spline-viewer>
 
-                    <p class="headline">
+                    <p class="textcenter">
                         Le 20 juillet 1969, après un vol sans incident majeur, Eagle se posa enfin sur la surface
                         lunaire. "Houston, ici la base de la Tranquillité. L’aigle a atterri", annonça Neil Armstrong à
                         la Terre...
@@ -146,29 +148,12 @@
             </section>
         </main>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const splineViewers = document.querySelectorAll('spline-viewer');
-            let loadedScenes = 0;
-
-            // Ajoute un écouteur pour vérifier quand toutes les scènes sont chargées
-            splineViewers.forEach(viewer => {
-                viewer.addEventListener('load', () => {
-                    loadedScenes++;
-                    if (loadedScenes === splineViewers.length) {
-                        document.body.classList.add('loaded');
-                    }
-                });
-            });
-        });
-    </script>
-    <!-- AOS Library -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
 
             AOS.init({
-                offset: 120,     // Décalage avant que l'animation ne commence (en pixels)
+                offset: 300,     // Décalage avant que l'animation ne commence (en pixels)
                 delay: 1000,        // Délai avant le début de l'animation (en millisecondes)
                 duration: 400,   // Durée de l'animation (en millisecondes)
                 easing: 'ease',  // Type d'atténuation de l'animation
