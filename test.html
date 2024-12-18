@@ -9,50 +9,32 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
 
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
-    <!-- <style>
-        body {
-            visibility: hidden; /* Masque la page jusqu'à ce qu'elle soit prête */
-            overflow: hidden;   /* Évite tout défilement pendant le chargement */
-        }
-        body.loaded {
-            visibility: visible; /* Affiche la page après le chargement */
-            overflow: auto;
-        }
-    </style> -->
+
     <title>Apollo - Les Premiers Hommes sur la Lune</title>
 </head>
 
 
 <body>
     <div class="wrapper">
-        <!-- HEADER -->
         <header class="header">
-            <nav class="nav">
-                <div class="logo-container">
-                    <h1 class="logo">Apollo</h1>
-                </div>
-                <ul class="nav-list">
-                    <li class="nav-item"><a href="#" class="nav-link">Accueil</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Nos Histoires</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">À propos</a></li>
-                </ul>
-            </nav>
+                    <h1 class="logo"><a href="#">Apollo</a> </h1>
+                    
+<spline-viewer url="https://prod.spline.design/Dz-cOXSPOminJjrb/scene.splinecode" class="fusée"></spline-viewer>
         </header>
-
-        <!-- MAIN CONTENT -->
+        
+     
         <main class="main-content">
-            <!-- Introduction -->
+           
             <section class="intro">
                 <h1 class="accroche" data-aos="fade-up">Découvrez l'histoire des premiers hommes sur la Lune</h1>
                 <img src="./src/img/moon.jpg" alt="moon" class="moon" data-aos="zoom-in">
             </section>
 
-            <!-- Interactive Section -->
             <section class="interactive">
                 <spline-viewer url="https://prod.spline.design/G9dnkbInXcIQ0zZr/scene.splinecode"></spline-viewer>
             </section>
 
-            <!-- History Section -->
+           
             <section data-aos="fade-up">
                 <p class="textcenter">
                     À la suite de la Seconde Guerre mondiale, le monde entra dans une nouvelle période marquée par des
@@ -60,7 +42,7 @@
                 </p>
             </section>
 
-            <!-- Kennedy Speech -->
+            
             <section class="kennedy">
                 <section data-aos="fade-up" class="taille2">
                     <p class="txtleft">
@@ -75,7 +57,7 @@
                 </div>
             </section>
 
-            <!-- Apollo Missions -->
+           
             <section data-aos="fade-right">
 
                 <p class="textcenter">
@@ -96,7 +78,7 @@
                 </p>
             </section>
 
-            <!-- Launch Section -->
+          
             <section data-aos="zoom-in">
                 <p class="textcenter">
                     Sous les yeux du monde entier, les trois astronautes enfilèrent leurs combinaisons et se préparèrent
@@ -153,12 +135,12 @@
         document.addEventListener('DOMContentLoaded', function () {
 
             AOS.init({
-                offset: 300,     // Décalage avant que l'animation ne commence (en pixels)
-                delay: 1000,        // Délai avant le début de l'animation (en millisecondes)
-                duration: 400,   // Durée de l'animation (en millisecondes)
-                easing: 'ease',  // Type d'atténuation de l'animation
-                once: false,     // Permet de rejouer les animations à chaque défilement
-                mirror: true     // Permet de rejouer les animations en sens inverse en remontant la page
+                offset: 300,     
+                delay: 1000,     
+                duration: 400,   
+                easing: 'ease',  
+                once: false,    
+                mirror: true     
             });
 
         });
