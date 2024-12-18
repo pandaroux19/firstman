@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: 'kiona', sans-serif;
-    background-color: black;
+    background-image: url('./src/img/etoiles.gif');
     color: white;
     display: flex;
     justify-content: center;
