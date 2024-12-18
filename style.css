@@ -1,4 +1,4 @@
-/* Définir les polices */
+
 @font-face {
     font-family: 'kiona';
     src: url('./src/police/Kiona-Regular.ttf') format('truetype');
@@ -15,7 +15,7 @@ body {
     
 }
 
-/* Wrapper pour centrer tout le contenu */
+
 .wrapper {
     max-width: 1200px;
     width: 100%;
@@ -23,13 +23,14 @@ body {
     box-sizing: border-box;
 }
 
-/* Header */
+
 .header {
-    background-color: rgba(0, 0, 0, 0.8);
+   
     padding: 20px;
-    position: static;
+    position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1000;;
+    
     
 }
 
@@ -79,7 +80,6 @@ a {
     color: #bbb;
 }
 
-/* Contenu principal */
 .main-content {
     padding: 20px;
 }
@@ -96,7 +96,7 @@ a {
 
 .moon {
     width: 100%;
-    max-width: 800px;
+    max-width: 650px;
     margin-top: 20px;
     margin-right: -175px;
 }
@@ -173,5 +173,5 @@ a {
 
 .fusée{
     width: 100%;
-    height: 150px;
+    height: 120px;
 }

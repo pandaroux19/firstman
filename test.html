@@ -17,14 +17,15 @@
 <body>
     <div class="wrapper">
         <header class="header">
-                    <h1 class="logo"><a href="#">Apollo</a> </h1>
-                    
-<spline-viewer url="https://prod.spline.design/Dz-cOXSPOminJjrb/scene.splinecode" class="fusée"></spline-viewer>
+            <h1 class="logo"><a href="#">Apollo</a> </h1>
+
+            <spline-viewer url="https://prod.spline.design/Dz-cOXSPOminJjrb/scene.splinecode"
+                class="fusée"></spline-viewer>
         </header>
-        
-     
+
+
         <main class="main-content">
-           
+
             <section class="intro">
                 <h1 class="accroche" data-aos="fade-up">Découvrez l'histoire des premiers hommes sur la Lune</h1>
                 <img src="./src/img/lune.png" alt="moon" class="moon" data-aos="zoom-in">
@@ -34,15 +35,21 @@
                 <spline-viewer url="https://prod.spline.design/G9dnkbInXcIQ0zZr/scene.splinecode"></spline-viewer>
             </section>
 
-           
+
             <section data-aos="fade-up">
                 <p class="textcenter">
                     À la suite de la Seconde Guerre mondiale, le monde entra dans une nouvelle période marquée par des
-                    tensions croissantes entre deux superpuissances : les États-Unis et l'Union soviétique...
+                    tensions croissantes entre deux superpuissances : les États-Unis et l'Union soviétique.
+                    Cette rivalité intense inaugura l’ère de la guerre froide. Ce conflit, qui ne se limite pas aux
+                    aspects militaires, s'étendit également aux domaines scientifiques et technologiques.
+                    Une véritable compétition s’engagea : la conquête de l’espace. Les Soviétiques prirent une longueur
+                    d’avance en lançant Spoutnik en 1957, suivi par le vol historique de Youri Gagarine, le premier
+                    homme à voyager dans l’espace, en 1961.
+                    Cependant, les Américains étaient bien décidés à ne pas rester en retrait.
                 </p>
             </section>
 
-            
+
             <section class="kennedy">
                 <section data-aos="fade-up" class="taille2">
                     <p class="txtleft">
@@ -52,12 +59,12 @@
                     </p>
                 </section>
                 <div class="taille">
-                <spline-viewer url="https://prod.spline.design/UEXL0Yaim929O9kr/scene.splinecode"
-                    class="imgkennedy"></spline-viewer>
+                    <spline-viewer url="https://prod.spline.design/UEXL0Yaim929O9kr/scene.splinecode"
+                        class="imgkennedy"></spline-viewer>
                 </div>
             </section>
 
-           
+
             <section data-aos="fade-right">
 
                 <p class="textcenter">
@@ -78,7 +85,7 @@
                 </p>
             </section>
 
-          
+
             <section data-aos="zoom-in">
                 <p class="textcenter">
                     Sous les yeux du monde entier, les trois astronautes enfilèrent leurs combinaisons et se préparèrent
@@ -131,19 +138,7 @@
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-
-            AOS.init({
-                offset: 300,     
-                delay: 1000,     
-                duration: 400,   
-                easing: 'ease',  
-                once: false,    
-                mirror: true     
-            });
-
-        });
+    <script src="./script.js">
     </script>
 </body>
 
