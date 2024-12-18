@@ -117,7 +117,7 @@ body {
 }
 
 
-/* Section Discourd */
+
 .discourd {
     display: flex;
     justify-content: space-between;
@@ -126,19 +126,20 @@ body {
     margin-top: 40px;
 }
 
-/* Texte de la section */
+
 .discourd p {
-    flex: 1 1 50%; /* Prend 50% de la largeur du conteneur */
+    flex: 1 1 50%; 
     font-size: 16px;
     line-height: 1.6;
     color: white;
     text-align: left;
 }
 
-/* Visualiseur Spline */
+
 .discourd .kennedy {
-    flex: 1 1 50%; /* Prend 50% de la largeur du conteneur */
-    height: 500px; /* Ajuste la hauteur */
-    max-width: 100%; /* Empêche le dépassement horizontal */
-    border-radius: 10px; /* Ajout d'une bordure arrondie optionnelle */
+    flex: 1 1 50%; 
+    height: 500px; 
+    max-width: 100%; 
+    border-radius: 10px; 
 }
+
